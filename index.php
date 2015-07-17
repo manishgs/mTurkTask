@@ -1,3 +1,8 @@
+<?php
+    $pdf=isset($_GET['pdf'])?$_GET['pdf']:'';
+
+?>
+
 <script src="jquery.js"></script>
 <script type="text/javascript"
         src="http://www.jawish.org/blog/uploads/jquery.gdocsviewer.min.js"></script>;
@@ -34,7 +39,7 @@
 
     </div>
     <div class="right">
-            <a href="https://rc-demo.s3-us-west-2.amazonaws.com/84/1.pdf" id="pdf_url" ></a>
+            <a href=<?php echo $pdf; ?> id="pdf_url" ></a>
     </div>
 </div>
 
