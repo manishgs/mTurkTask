@@ -27,8 +27,8 @@
         <div class="left">
 
             <form id="mturk_form" method="post" action="https://workersandbox.mturk.com/mturk/externalSubmit">
-                <input type="hidden" name="workerId" value=""/>
-                <input type="hidden" name="assignmentId" value=""/>
+                <input type="hidden" name="workerId" value="<?php echo $_GET['workerId'];?>"/>
+                <input type="hidden" name="assignmentId" value="<?php echo $_GET['assignmentId'];?>"/>
                 <textarea name="feedback" style="width: 100%" rows="38.5"
                           placeholder="Enter any feedback you have about the task here"></textarea>
                 <br>
