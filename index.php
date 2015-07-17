@@ -4,8 +4,7 @@
     <title>Task</title>
 
     <script src="jquery.js"></script>
-    <script type="text/javascript"
-            src="http://www.jawish.org/blog/uploads/jquery.gdocsviewer.min.js"></script>
+    <script type="text/javascript" src="jquery.gdocsviewer.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('#pdf_url').gdocsViewer({width: 450, height: 580});
