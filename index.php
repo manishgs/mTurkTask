@@ -23,22 +23,19 @@
 </head>
 <body>
     <div class="wrapper">
-        <h3>Mturk</h3>
+        <p>"In this HIT, you are to transcribe the text as shown in the scanned pdf on the right. It is possible that your HIT will be rejected if we find that there are number of spelling mistakes or missing text in the transcribed text.</p>
+        <p>You must accept HIT before you can submit the result.</p>
         <div class="left">
-
             <form id="mturk_form" method="post" action="https://workersandbox.mturk.com/mturk/externalSubmit">
                 <input type="hidden" name="workerId" value="<?php echo $_GET['workerId'];?>"/>
                 <input type="hidden" name="assignmentId" value="<?php echo $_GET['assignmentId'];?>"/>
                 <textarea name="feedback" style="width: 100%" rows="38.5"
-                          placeholder="Enter any feedback you have about the task here"></textarea>
+                          placeholder="Write the text here"></textarea>
                 <br>
                 <button type="submit" value="Submit" class="button">Finish and Submit HIT</button>
             </form>
-
         </div>
-        
         <?php  $pdf=isset($_GET['pdf'])?$_GET['pdf']:'';?>
-
         <div class="right">
                 <a href=<?php echo $pdf; ?> id="pdf_url" ></a>
         </div>
