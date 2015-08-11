@@ -23,7 +23,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <p>"In this HIT, you are to transcribe the text as shown in the scanned pdf on the right. It is possible that your HIT will be rejected if we find that there are number of spelling mistakes or missing text in the transcribed text.</p>
+        <p>In this HIT, you are to transcribe the text as shown in the scanned pdf on the right. It is possible that your HIT will be rejected if we find that there are number of spelling mistakes or missing text in the transcribed text.</p>
         <p>You must accept HIT before you can submit the result.</p>
         <div class="left">
             <form id="mturk_form" method="post" action="https://workersandbox.mturk.com/mturk/externalSubmit">
