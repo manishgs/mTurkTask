@@ -45,7 +45,7 @@
         </div>
         <?php  $pdf=isset($_GET['pdf'])?$_GET['pdf']:'';?>
         <div class="right">
-           <iframe width="100%" height="575" src="http://localhost:8001/#<?php echo $pdf;?>"></iframe>
+           <iframe width="100%" height="575" src="/viewer#<?php echo $pdf;?>"></iframe>
         </div>
     </div>
 </body>
