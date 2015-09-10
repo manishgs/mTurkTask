@@ -4,11 +4,17 @@
     <title>Task</title>
 
     <script src="jquery.js"></script>
-    <script type="text/javascript" src="jquery.gdocsviewer.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('#pdf_url').gdocsViewer({width: 450, height: 580});
+     $(function () {
+
+        $('#mturk_form').on('submit', function(e){
+            if($('#feedback').val() == '')
+            {
+                e.preventDefault();
+                alert('Text can\'t be empty')            
+            }            
         });
+    })
     </script>
     <style>
         .wrapper {overflow: hidden; width: 900px; padding: 20px;  margin:20px auto; border: 1px solid #ccc}
@@ -17,8 +23,10 @@
         .button{  margin-top: 20px;
             background-color: #eee);
             border: none;
+            cursor: pointer;
             padding: 8px 10px;
             color: #484848; }
+            .button:hover {background: #ccc}
     </style>
 </head>
 <body>
@@ -29,7 +37,7 @@
             <form id="mturk_form" method="post" action="https://www.mturk.com/mturk/externalSubmit">
                 <input type="hidden" name="workerId" value="<?php echo $_GET['workerId'];?>"/>
                 <input type="hidden" name="assignmentId" value="<?php echo $_GET['assignmentId'];?>"/>
-                <textarea name="feedback" style="width: 100%" rows="38.5"
+                <textarea name="feedback" id="feedback" style="width: 100%" rows="38.5"
                           placeholder="Write the text here"></textarea>
                 <br>
                 <button type="submit" value="Submit" class="button">Finish and Submit HIT</button>
@@ -37,7 +45,7 @@
         </div>
         <?php  $pdf=isset($_GET['pdf'])?$_GET['pdf']:'';?>
         <div class="right">
-                <a href=<?php echo $pdf; ?> id="pdf_url" ></a>
+           <iframe width="100%" height="575" src="http://localhost:8001/#<?php echo $pdf;?>"></iframe>
         </div>
     </div>
 </body>
