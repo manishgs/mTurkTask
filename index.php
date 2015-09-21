@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Task</title>
-
+    <meta charset="utf-8">
     <script src="jquery.js"></script>
     <script type="text/javascript">
      $(function () {
@@ -34,7 +34,7 @@
         <p>In this HIT, you are to transcribe the text as shown in the scanned pdf on the right. It is possible that your HIT will be rejected if we find that there are number of spelling mistakes or missing text in the transcribed text.</p>
         <p>You must accept HIT before you can submit the result.</p>
         <div class="left">
-            <form id="mturk_form" method="post" accept-charset="ISO-8859-1" action="https://www.mturk.com/mturk/externalSubmit">
+            <form id="mturk_form" method="post" accept-charset="utf-8" action="https://www.mturk.com/mturk/externalSubmit">
                 <input type="hidden" name="workerId" value="<?php echo $_GET['workerId'];?>"/>
                 <input type="hidden" name="assignmentId" value="<?php echo $_GET['assignmentId'];?>"/>
                 <textarea name="feedback" id="feedback" style="width: 100%" rows="38.5"
