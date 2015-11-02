@@ -17,22 +17,25 @@
     })
     </script>
     <style>
-        .wrapper {overflow: hidden; width: 900px; padding: 20px;  margin:20px auto; border: 1px solid #ccc}
-        .left {float: left; width: 49% ;}
-        .right {float: right; width: 49%}
+        .wrapper {overflow: hidden; width: 900px; padding: 10px 20px;  margin:20px auto; border: 1px solid #ccc}
+        .left {float: left; width: 48% ;}
+        .right {float: right; width: 48%}
         .button{  margin-top: 20px;
             background-color: #eee);
             border: none;
             cursor: pointer;
             padding: 8px 10px;
             color: #484848; }
-            .button:hover {background: #ccc}
+        .button:hover {background: #ccc}
+        .disclaimer {font-size: 14px;}
+        #feedback {padding: 10px;}
     </style>
 </head>
 <body>
     <div class="wrapper">
         <p>In this HIT, you are to transcribe the text as shown in the scanned pdf on the right. It is possible that your HIT will be rejected if we find that there are number of spelling mistakes or missing text in the transcribed text.</p>
         <p>You must accept HIT before you can submit the result.</p>
+        <p class="disclaimer">DISCLAIMER - IF YOU ARE NOT A FRENCH SPEAKER PLEASE DO NOT COMPLETE TASKS FOR FRENCH LANGUAGE DOCUMENTS. DUE TO ERRORS BY PREVIOUS TRANSCRIBERS, WE ARE NOT IN A POSITION TO PAY FOR TRANSCRIPTIONS OF FRENCH LANGUAGE DOCUMENTS BY NON-FRENCH SPEAKERS.</p>
         <div class="left">
             <form id="mturk_form" method="post" accept-charset="utf-8" action="https://www.mturk.com/mturk/externalSubmit">
                 <input type="hidden" name="workerId" value="<?php echo $_GET['workerId'];?>"/>
@@ -45,7 +48,7 @@
         </div>
         <?php $pdf=isset($_GET['pdf'])?$_GET['pdf']:'';?>
         <div class="right">
-           <iframe width="100%" height="575" src="/viewer#<?php echo $pdf;?>"></iframe>
+           <iframe width="100%" height="590" src="/viewer#<?php echo $pdf;?>"></iframe>
         </div>
     </div>
 </body>
