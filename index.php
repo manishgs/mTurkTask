@@ -27,7 +27,7 @@
             padding: 8px 10px;
             color: #484848; }
         .button:hover {background: #ccc}
-        .disclaimer {font-size: 14px;}
+        .disclaimer {font-size: 14px;   background-color: #ECECEC;  padding: 10px;}
         #feedback {padding: 10px;}
     </style>
 </head>
