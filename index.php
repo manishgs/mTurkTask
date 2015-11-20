@@ -43,7 +43,7 @@
             <div id="instructions" class="wrapper">
             <h4>Other instructions for transcribers: </h4>
             <ol>
-                <li>1) Original letters and accents should be preserved (for example for French language contracts, the letter/ symbols “œ” and “æ” and the following accents should be transcribed: à ç è é ê ö)</li>
+                <li>Original letters and accents should be preserved (for example for French language contracts, the letter/ symbols “œ” and “æ” and the following accents should be transcribed: à ç è é ê ö)</li>
                 <li>Original symbols should be transcribed where possible (for example: ° as used in “N°”, or in coordinates like 53°14’477’’)</li>
                 <li>For non-transcribed objects such as maps, photos or illegible signatures, please provide a bracketed entry (for example: [map], [photo] or [signature])</li>
                 <li>If you can read the handwritten signature, or any other handwriting, please transcribe it</li>
@@ -83,7 +83,7 @@
     <div id="instructions" class="wrapper">
         <h4>Other instructions for transcribers: </h4>
         <ol>
-            <li>1) Original letters and accents should be preserved (for example for French language contracts, the letter/ symbols “œ” and “æ” and the following accents should be transcribed: à ç è é ê ö)</li>
+            <li>Original letters and accents should be preserved (for example for French language contracts, the letter/ symbols “œ” and “æ” and the following accents should be transcribed: à ç è é ê ö)</li>
             <li>Original symbols should be transcribed where possible (for example: ° as used in “N°”, or in coordinates like 53°14’477’’)</li>
             <li>For non-transcribed objects such as maps, photos or illegible signatures, please provide a bracketed entry (for example: [map], [photo] or [signature])</li>
             <li>If you can read the handwritten signature, or any other handwriting, please transcribe it</li>
