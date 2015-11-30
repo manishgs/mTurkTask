@@ -32,7 +32,7 @@ $pdf = isset($_GET['pdf']) ? $_GET['pdf'] : '';
     
         <?php if($assignmentId == 'ASSIGNMENT_ID_NOT_AVAILABLE'):?>
             <p class="disclaimer"><?php echo disclaimer($lang);?></p>
-            <div id="instructions" class="wrapper">
+            <div id="instructions">
                     <?php echo other_instructions($lang);?>
             </div>
         <?php else:?>
