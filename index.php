@@ -2,7 +2,7 @@
 require_once 'functions.php';
 $assignmentId = isset($_GET['assignmentId']) ? $_GET['assignmentId'] : '';
 $workerId = isset($_GET['workerId']) ? $_GET['workerId'] : '';
-$lang = isset($_GET['lang']) ? $_GET['lang'] : 'en';
+$lang = isset($_GET['lang']) ? strtolower($_GET['lang']) : 'en';
 $pdf = isset($_GET['pdf']) ? $_GET['pdf'] : '';
 ?>
 
@@ -44,7 +44,8 @@ $pdf = isset($_GET['pdf']) ? $_GET['pdf'] : '';
             <form id="mturk_form" method="post" accept-charset="utf-8" action="https://www.mturk.com/mturk/externalSubmit">
                 <input type="hidden" name="workerId" value="<?php echo $workerId;?>"/>
                 <input type="hidden" name="assignmentId" value="<?php echo $assignmentId;?>"/>
-                <p><textarea name="feedback" id="feedback" style="width: 100%" rows="38.5" placeholder="Write the text here"></textarea></p>
+                <textarea name="feedback" id="feedback" style="width: 100%" rows="38.5" placeholder="Write the text here"></textarea>
+                <br/>
 
             <?php if($assignmentId != 'ASSIGNMENT_ID_NOT_AVAILABLE'):?>
                 <button type="submit" value="Submit" class="button">Finish and Submit HIT</button>

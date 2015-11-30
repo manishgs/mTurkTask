@@ -28,13 +28,13 @@ function other_instructions($lang='en')
 	$lang_text = array(
 		'en' => '<h4>Other instructions for transcribers: </h4>
 		            <ol>
-		                <li>Original letters and accents should be preserved (for example for French language contracts, the letter/ symbols “œ” and “æ” and the following accents should be transcribed: à ç è é ê ö)</li>
-		                <li>Original symbols should be transcribed where possible (for example: ° as used in “N°”, or in coordinates like 53°14’477’’)</li>
-		                <li>For non-transcribed objects such as maps, photos or illegible signatures, please provide a bracketed entry (for example: [map], [photo] or [signature])</li>
-		                <li>If you can read the handwritten signature, or any other handwriting, please transcribe it</li>
-		                <li>Tables should be transcribed with pipes ( | ) as separators (for example: “Royalties | 10% | 12% | 15%”)</li>
-		                <li>Please include any typed page numbers or other document references that appear on the page.</li>
-		                <li>Please include a single space only between each Article of the contract.</li>
+						<li>Original letters and accents should be preserved (for example for French language contracts, the letters / symbols “œ” and “æ” and the following accents should be transcribed: à ç è é ê ö).</li>
+						<li>Original symbols should be transcribed where possible (for example: ° as used in “N°”, or in coordinates like “53°14’477’’).</li>
+						<li>For non-transcribed objects such as maps, photos or illegible signatures, please provide a bracketed entry (for example: [map], [photo] or [signature]).</li>
+						<li>If you can read the handwritten signature, or any other handwriting, please transcribe it</li>
+						<li>Tables should be transcribed with pipes ( | ) as separators (for example: “Royalties | 10% | 12% | 15%”).</li>
+						<li>Please include any typed page numbers or other document references that appear on the page.</li>
+						<li>Please include a single space only between each Article of the contract.</li>
 		            </ol>',
 		'fr' => '<h4>Autres instructions pour les transcripteurs:</h4>
 					<ol>
