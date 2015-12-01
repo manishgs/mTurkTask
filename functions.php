@@ -12,6 +12,7 @@ function get_lang_text($lang_text, $lang)
 	return $lang_text['en'];
 }
 
+
 function disclaimer($lang = 'en')
 {
 	$lang_text = array(
@@ -26,7 +27,7 @@ function disclaimer($lang = 'en')
 function other_instructions($lang='en')
 {
 	$lang_text = array(
-		'en' => '<h4>Other instructions for transcribers: </h4>
+				'en' => '<h4>Other instructions for transcribers: </h4>
 		            <ol>
 						<li>Original letters and accents should be preserved (for example for French language contracts, the letters / symbols “œ” and “æ” and the following accents should be transcribed: à ç è é ê ö).</li>
 						<li>Original symbols should be transcribed where possible (for example: ° as used in “N°”, or in coordinates like “53°14’477’’).</li>
@@ -36,7 +37,7 @@ function other_instructions($lang='en')
 						<li>Please include any typed page numbers or other document references that appear on the page.</li>
 						<li>Please include a single space only between each Article of the contract.</li>
 		            </ol>',
-		'fr' => '<h4>Autres instructions pour les transcripteurs:</h4>
+				'fr' => '<h4>Autres instructions pour les transcripteurs:</h4>
 					<ol>
 						<li>Les lettres et accents originaux doivent être présevrés (par exemple pour les contrats en langue française, les lettres / symboles “œ” et “æ” ainsi que les accents suivants doivent être retranscrits: à ç è é ê ö).</li>
 						<li>Les symboles originaux doivent, dans la mesure du possible, être retranscrits (par exemple: ° utilisé dans “N°”, ou dans des coordonnées comme “53°14’477”).</li>
@@ -50,4 +51,19 @@ function other_instructions($lang='en')
 
 
 	return get_lang_text($lang_text, $lang);
+}
+
+
+function show_language($lang='en')
+{
+	$lang_list = ['en' => "English", 'fr' => "French", 'pt' => 'Portuguese', 'es' => 'Spanish', 'aa' => 'Afar', 'ab' => 'Abkhazian', 'ae' => 'Avestan', 'af' => 'Afrikaans', 'ak' => 'Akan', 'am' => 'Amharic', 'an' => 'Aragonese', 'ar' => 'Arabic', 'as' => 'Assamese', 'av' => 'Avaric', 'ay' => 'Aymara', 'az' => 'Azerbaijani', 'ba' => 'Bashkir', 'be' => 'Belarusian', 'bg' => 'Bulgarian', 'bh' => 'Bihari', 'bi' => 'Bislama', 'bm' => 'Bambara', 'bn' => 'Bengali', 'bo' => 'Tibetan', 'br' => 'Breton', 'bs' => 'Bosnian', 'ca' => 'Catalan', 'ce' => 'Chechen', 'ch' => 'Chamorro', 'co' => 'Corsican', 'cr' => 'Cree', 'cs' => 'Czech', 'cv' => 'Chuvash', 'cy' => 'Welsh', 'da' => 'Danish', 'de' => 'German', 'dv' => 'Divehi', 'dz' => 'Dzongkha', 'ee' => 'Ewe', 'el' => 'Greek', 'eo' => 'Esperanto', 'es' => 'Spanish', 'et' => 'Estonian', 'eu' => 'Basque', 'fa' => 'Persian', 'ff' => 'Fulah', 'fi' => 'Finnish', 'fj' => 'Fijian', 'fo' => 'Faroese', 'fy' => 'Western Frisian', 'ga' => 'Irish', 'gd' => 'Gaelic', 'gl' => 'Galician', 'gn' => 'Guarani', 'gu' => 'Gujarati', 'gv' => 'Manx', 'ha' => 'Hausa', 'he' => 'Hebrew', 'hi' => 'Hindi', 'ho' => 'Hiri Motu', 'hr' => 'Croatian', 'ht' => 'Haitian', 'hu' => 'Hungarian', 'hy' => 'Armenian', 'hz' => 'Herero', 'id' => 'Indonesian', 'ig' => 'Igbo', 'ii' => 'Sichuan Yi', 'ik' => 'Inupiaq', 'io' => 'Ido', 'is' => 'Icelandic', 'it' => 'Italian', 'iu' => 'Inuktitut', 'ja' => 'Japanese', 'jv' => 'Javanese', 'ka' => 'Georgian', 'kg' => 'Kongo', 'ki' => 'Kikuyu', 'kj' => 'Kuanyama', 'kk' => 'Kazakh', 'kl' => 'Kalaallisut', 'km' => 'Central Khmer', 'kn' => 'Kannada', 'ko' => 'Korean', 'kr' => 'Kanuri', 'ks' => 'Kashmiri', 'ku' => 'Kurdish', 'kv' => 'Komi', 'kw' => 'Cornish', 'ky' => 'Kirghiz', 'la' => 'Latin', 'lb' => 'Luxembourgish', 'lg' => 'Ganda', 'li' => 'Limburgan', 'ln' => 'Lingala', 'lo' => 'Lao', 'lt' => 'Lithuanian', 'lu' => 'Luba-Katanga', 'lv' => 'Latvian', 'mg' => 'Malagasy', 'mh' => 'Marshallese', 'mi' => 'Maori', 'mk' => 'Macedonian', 'ml' => 'Malayalam', 'mn' => 'Mongolian', 'mr' => 'Marathi', 'ms' => 'Malay', 'mt' => 'Maltese', 'my' => 'Burmese', 'na' => 'Nauru', 'nb' => 'Norwegian', 'nd' => 'Ndebele', 'ne' => 'Nepali', 'ng' => 'Ndonga', 'nl' => 'Dutch', 'nn' => 'Norwegian Nynorsk', 'no' => 'Norwegian', 'nr' => 'Ndebele, South', 'nv' => 'Navajo', 'ny' => 'Chichewa', 'oc' => 'Occitan', 'oj' => 'Ojibwa', 'om' => 'Oromo', 'or' => 'Oriya', 'os' => 'Ossetian', 'pa' => 'Panjabi', 'pi' => 'Pali', 'pl' => 'Polish', 'ps' => 'Pushto', 'qu' => 'Quechua', 'rm' => 'Romansh', 'rn' => 'Rundi', 'ro' => 'Romanian', 'ru' => 'Russian', 'rw' => 'Kinyarwanda', 'sa' => 'Sanskrit', 'sc' => 'Sardinian', 'sd' => 'Sindhi', 'se' => 'Northern Sami', 'sg' => 'Sango', 'si' => 'Sinhala', 'sk' => 'Slovak', 'sl' => 'Slovenian', 'sm' => 'Samoan', 'sn' => 'Shona', 'so' => 'Somali', 'sq' => 'Albanian', 'sr' => 'Serbian', 'ss' => 'Swati', 'st' => 'Sotho, Southern', 'su' => 'Sundanese', 'sv' => 'Swedish', 'sw' => 'Swahili', 'ta' => 'Tamil', 'te' => 'Telugu', 'tg' => 'Tajik', 'th' => 'Thai', 'ti' => 'Tigrinya', 'tk' => 'Turkmen', 'tl' => 'Tagalog', 'tn' => 'Tswana', 'to' => 'Tonga (Tonga Islands)', 'tr' => 'Turkish', 'ts' => 'Tsonga', 'tt' => 'Tatar', 'tw' => 'Twi', 'ty' => 'Tahitian', 'ug' => 'Uighur', 'uk' => 'Ukrainian', 'ur' => 'Urdu', 'uz' => 'Uzbek', 've' => 'Venda', 'vi' => 'Vietnamese', 'vo' => 'Volapük', 'wa' => 'Walloon', 'wo' => 'Wolof', 'xh' => 'Xhosa', 'yi' => 'Yiddish', 'yo' => 'Yoruba', 'za' => 'Zhuang', 'zh' => 'Chinese', 'zu' => 'Zulu'];
+
+	$language = 'English';
+
+    if(array_key_exists($lang, $lang_list))
+	{
+		$language = $lang_list[$lang];
+	}
+
+	return sprintf(" in <strong>%s</strong>", $language);
 }

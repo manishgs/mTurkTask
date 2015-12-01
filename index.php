@@ -23,12 +23,13 @@ $pdf = isset($_GET['pdf']) ? $_GET['pdf'] : '';
                 alert('Text can\'t be empty.');            
             }            
         });
+        
     })
     </script>
 </head>
 <body>
     <div class="wrapper">
-        <p>In this HIT, you are to transcribe the text as shown in the scanned pdf on the right. It is possible that your HIT will be rejected if we find that there are number of spelling mistakes or missing text in the transcribed text.</p>
+        <p>In this HIT, you are to transcribe the text <?php echo show_language($lang);?> as shown in the scanned pdf on the right. It is possible that your HIT will be rejected if we find that there are number of spelling mistakes or missing text in the transcribed text.</p>
     
         <?php if($assignmentId == 'ASSIGNMENT_ID_NOT_AVAILABLE'):?>
             <p class="disclaimer"><?php echo disclaimer($lang);?></p>
