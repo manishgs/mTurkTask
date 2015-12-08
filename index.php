@@ -36,7 +36,8 @@ $pdf = isset($_GET['pdf']) ? $_GET['pdf'] : '';
             <div id="instructions">
                     <?php echo other_instructions($lang);?>
             </div>
-        <?php else:?>
+        <?php elseif($lang =='fr'):?>
+            <p class="disclaimer"><?php echo disclaimer('en');?></p>
             <p class="disclaimer"><?php echo disclaimer($lang);?></p>
             <p><a href="#instructions" class="see_other_instruction">See other instructions</a></p>
         <?php endif;?>
