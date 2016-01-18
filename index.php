@@ -10,7 +10,7 @@ $pdf = isset($_GET['pdf']) ? $_GET['pdf'] : '';
 <html>
 <head>
     <title>Resource Contracts - MTurk Task</title>
-    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">    
     <script src="jquery.js"></script>
     <script type="text/javascript">
